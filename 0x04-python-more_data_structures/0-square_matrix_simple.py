@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-#function square value of all integers in a matrix
+# function square value of all integers in a matrix
 def square_matrix_simple(matrix=[]):
     new_matrix = matrix.copy()
     for i in range(len(matrix)):

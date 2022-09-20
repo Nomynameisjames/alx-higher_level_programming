@@ -6,8 +6,8 @@
 int main()
 {
 	FILE *ptr = NULL;
-	char str[10] = "type";
-	ptr = fopen("0-answer.txt", "w");
+	char str[10] = "id";
+	ptr = fopen("1-answer.txt", "w");
 
 	if (ptr == NULL)
 	{

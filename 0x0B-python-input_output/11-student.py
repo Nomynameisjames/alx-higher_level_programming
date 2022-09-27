@@ -16,6 +16,7 @@ class Student:
     def to_json(self, attrs=None):
         """ Public method that retrieves a dictionary
         representation of a Student """
+
         new = {}
 
         if attrs is None:
@@ -25,4 +26,10 @@ class Student:
             if attr in self.__dict__.keys():
                 new[attr] = self.__dict__[attr]
 
-        return 
+        return new
+
+    def reload_from_json(self, json):
+        """ eplaces all attributes of the Student instance """
+
+        for key, value in json.items():
+            setattr(self, key, value)
